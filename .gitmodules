@@ -1,0 +1,3 @@
+[submodule "sample_clojure"]
+	path = sample_clojure
+	url = https://github.com/shiphitchcock1/sample_clojure.git
