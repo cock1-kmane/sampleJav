@@ -18,9 +18,9 @@ build:
   ci:
     - java -version
    # - if [ "$SHIPPABLE_JAVA_VERSION" == "oraclejdk7" ]; then foobar; fi
-    - mkdir -p shippable/testresults
-    - mkdir -p shippable/codecovarage
+   # - mkdir -p shippable/testresults
+    #- mkdir -p shippable/codecovarage
 
-  after_success:
-    - mvn clean cobertura:cobertura
-    - mvn test
+  #after_success:
+   # - mvn clean cobertura:cobertura
+    #- mvn test
