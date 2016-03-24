@@ -6,8 +6,9 @@ jdk:
   - openjdk6
   - openjdk7
   - oraclejdk7
-  - oraclejdk8
+  #- oraclejdk8
 
+      
 build:
   pre_ci_boot:
     image_name: drydock/u12jav
@@ -16,5 +17,4 @@ build:
 
   ci:
     - java -version
-    
-    
+    - if [ "$SHIPPABLE_JAVA_VERSION" == "oraclejdk7" ]; then foobar; fi`
