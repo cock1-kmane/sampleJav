@@ -14,7 +14,8 @@ build:
     image_name: drydock/u12jav
     image_tag: prod
     pull: true
-    
+    options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+
   ci:
     - java -version
    # - if [ "$SHIPPABLE_JAVA_VERSION" == "oraclejdk7" ]; then foobar; fi
