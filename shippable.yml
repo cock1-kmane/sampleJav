@@ -4,10 +4,13 @@ language: java
 # Version number
 jdk:
   - openjdk6
-  #- openjdk7
+  - openjdk7
   #- oraclejdk7
   #- oraclejdk8
 
+env: 
+  - SHIPPABLE_POSTGRES_BINARY="/usr/lib/postgresql/\$SHIPPABLE_POSTGRES_VERSION/bin/postgres"
+  
 build:
   ci:
     - java -version
