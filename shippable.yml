@@ -8,6 +8,9 @@ jdk:
   - oraclejdk7
   - oraclejdk8
   
+env:
+  - SHIPPABLE_POSTGRES_BINARY="/usr/lib/postgresql/\$SHIPPABLE_POSTGRES_VERSION/bin/postgres"
+  
 build:
   ci:
     - java -version
